@@ -1,0 +1,17 @@
+version = 1
+
+[[annotations]]
+path = [
+    ".gitignore",
+    "Makefile",
+    "bin/**/*",
+]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = [
+    "**/*.rs",
+]
+SPDX-FileCopyrightText = "© 2020 Vlad-Stefan Harbuz"
+SPDX-License-Identifier = "Apache-2.0"
