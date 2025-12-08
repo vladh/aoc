@@ -9,16 +9,16 @@ fn read_lines(filename: &str) -> io::Result<io::Lines<io::BufReader<File>>> {
 }
 
 fn get_max_digit(s: &str) -> (i64, usize) {
-        let mut max_digit = 0;
-        let mut max_digit_idx = 0;
-        for (idx, c) in s.chars().enumerate() {
-            let digit = c.to_digit(10).expect("couldn't get digit") as i64;
-            if digit > max_digit {
-                max_digit = digit;
-                max_digit_idx = idx;
-            }
+    let mut max_digit = 0;
+    let mut max_digit_idx = 0;
+    for (idx, c) in s.chars().enumerate() {
+        let digit = c.to_digit(10).expect("couldn't get digit") as i64;
+        if digit > max_digit {
+            max_digit = digit;
+            max_digit_idx = idx;
         }
-        return (max_digit, max_digit_idx);
+    }
+    return (max_digit, max_digit_idx);
 }
 
 fn main() {

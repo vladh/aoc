@@ -19,14 +19,16 @@ fn main() {
         }
         let new_pos = pos + amount;
         let new_pos_mod = new_pos.rem_euclid(100);
-        print!("{:2} ({}) + {:2}\t= {:2} ({})\t%= {:2} ({})",
+        print!(
+            "{:2} ({}) + {:2}\t= {:2} ({})\t%= {:2} ({})",
             pos,
             pos.signum(),
             amount,
             new_pos,
             new_pos.signum(),
             new_pos_mod,
-            new_pos_mod.signum());
+            new_pos_mod.signum()
+        );
 
         let mut n_crosses = (new_pos / 100).abs();
         print!(" : {}", n_crosses);
