@@ -43,7 +43,6 @@ fn main() {
                     results[idx_num] = results[idx_num] * *num;
                 }
             }
-            results[0] = results[0]
         }
     }
 
